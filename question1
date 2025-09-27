@@ -1,0 +1,17 @@
+
+import java.util.Scanner;
+
+public class Main {
+    public static void printBeats(int n) {
+        if (n == 0) return;
+        printBeats(n - 1);
+        System.out.print(n + " ");
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        printBeats(n);
+        sc.close();
+    }
+}
