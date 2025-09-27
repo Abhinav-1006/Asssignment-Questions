@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static int sumTreasury(int n) {
+        if (n == 0) return 0;
+        return n + sumTreasury(n - 1);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println(sumTreasury(n));
+        sc.close();
+    }
+}
